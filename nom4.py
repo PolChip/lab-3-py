@@ -17,7 +17,8 @@ class BankAccount:
         self._balance -= amount
         self._transactions.append(f'Снятие: -{amount}')
         
-    @property # @property позволяет обращаться к балансу как к атрибуту
+    @property # @property (Геттер) 
+    позволяет обращаться к балансу как к атрибуту
     def balance(self): # получение баланса
         return self._balance
     
